@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');@import "tailwindcss";
 
 :root {
-  --main-family: 'Poppins', sans-serif;
-  --color-bg: linear-gradient(180deg, #FFFFFF 0%, #AEC6DC 100%);
+  --font-family: var(--main-header-font);
+  --font-subheadert: 'EB Garamond', serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
+  --color-bg: #faf9f6;
+  --color-accent:#0a3161;
+  --color-accent-alt: #b31942;
 
-  /* Controls the blob blur gradient colors within the main tag's svg */
-  --top-right-blur-1: #20C6B7;
-  --top-right-blur-2: #4D9ABF;
-  --bttm-left-blur-1: #FF5C02;
-  --bttm-left-blur-2: #FFCDB1;
+  --top-right-blur-1: #d9d9d9;
+  --top-right-blur-2: #d9d9d9;
+  --bttm-left-blur-1: #d9d9d9;
+  --bttm-left-blur-2: #d9d9d9;
+
+  /* Accent colors */
+  --accent-primary: #0a3161;
+  --accent-secondary: #b31942;
 }
 
 html {
     background: var(--color-bg);
-    font-family: var(--main-family);
     min-height: 100%;
 }
 
@@ -38,6 +44,7 @@ html {
 .header h1 {
   padding-top:5%;
   margin: 0;
+  font-family: var(--font-header);
 }
 
 .header .logo img {
@@ -51,6 +58,11 @@ html {
   margin: 0 auto;
   padding-bottom: 5%;
   font-weight: 500;
+  font-family: var(--font-subheader);
+}
+
+p {
+  font-family: var(--body-font);
 }
 
 @media only screen and (max-width: 450px) {
@@ -75,16 +87,16 @@ html {
 .btn.primary{
   display: inline-block;
   width: max-content;
-  background: #21A69A;
+  background: #0a3161;
   border: none;
   color: white;
   box-shadow: -3px 3px 5px rgb(35 33 33 / 23%);
 }
 
 .btn.primary:hover {
-  background: #21a69a;
+  background: white;
   box-shadow: inset 3px 4px 10px rgb(35 33 33 / 40%);
-  /* -webkit-box-shadow: inset 3px 4px 10px rgb(35 33 33 / 40%); */
+  color: #0a3161/* -webkit-box-shadow: inset 3px 4px 10px rgb(35 33 33 / 40%); */
 }
 
 .btn.secondary{
@@ -96,32 +108,6 @@ html {
 .btn.secondary:hover {
   background: #05171f;
   color: white;
-}
-
-.resource-list {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: larger;
-  text-align: center;
-  width: 100%;
-}
-
-.resource-list ul {
-  text-align: left;
-  margin: 0 auto;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-}
-
-.resource-list li {
-  padding: 2%;
-  font-weight: bold;
-}
-
-.resource-list a {
-  color: black;
-  line-height: 30px;
 }
 
 footer {

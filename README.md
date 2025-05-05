@@ -1,3 +1,15 @@
+# Hello, Adventurer! 
+
+Welcome to Chip Hunt's website for Accounting Solutions LLC, designed and developed by Monarch Media LLC. Chip is a good guy - honest, personable, high-energy jack-of-all trades, and we hope you like the online presence we've built for him. 
+
+Tech stack: Astro, Netlify, Tailwind, Node - honestly, I'm not sure what else this template came with.
+
+New to Astro.js? If you know HTML and can handle markdown, and write one line of JSX, you can probably fix whatever is wrong with this site. 
+
+I made the Client Portal from (near) scratch.
+
+---
+
 [![Netlify + Astro](https://user-images.githubusercontent.com/43764894/223559085-8ff69d2f-4247-427f-a3a6-d2036b00082a.png)](https://ntl.fyi/3LZGn73)
 
 # Astro Quickstart Template   
