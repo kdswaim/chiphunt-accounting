@@ -1,10 +1,13 @@
 ---
+import '../style/demo-styling.css'
 import Layout from '../components/Layout.astro';
 import Background from '../components/Background.astro';
 import ChipHunt from '../components/ChipHunt.astro';
 import Services from '../components/Services.astro';
-
-
+import ClientPortalBlurb from '../components/ClientPortalBlurb.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FilingDates from '../components/FilingDates.astro';
+import Tagline from '../components/Tagline.astro';
 ---
 
 <Layout title="Accounting Solutions | Bookkeeping & Tax Services in Brazil, IN">
@@ -24,9 +27,14 @@ import Services from '../components/Services.astro';
           <!-- Add drop cap A -->
           <p>Accounting Solutions is a full service accounting, tax preparation, payroll, bookkeeping and retirement planning business serving individuals and small businesses in Brazil, Terre Haute, and all of Wabash Valley.</p>
         </div>
+        <div>
       <ChipHunt />
-      <Services />
-      
+    </div>
+    <div><Services /></div>
+    <div><ClientPortalBlurb /></div>
+    <div><Testimonials /></div>
+    <div><FilingDates /></div>
+    <div><Tagline /></div>
       </div>
 	</main>
 </Layout>

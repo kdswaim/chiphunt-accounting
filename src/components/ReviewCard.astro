@@ -1,0 +1,11 @@
+---
+const {custLogo,logoAlt, reviewText} = Astro.props; 
+---
+<div class="p-8">
+<div class="bg-white w-60 h-30 drop-shadow-sm rounded-sm">
+        <img src={custLogo} alt={logoAlt} class="mx-0 bg-white"/>
+    <div class="bg-white px-6">
+        {reviewText}
+    </div>
+</div>
+</div>

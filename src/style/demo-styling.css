@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');@import "tailwindcss";
 
 :root {
-  --font-family: var(--main-header-font);
+  --font-family: var(--font-header);
+  --font-header: var(--font-header);
   --font-subheadert: 'EB Garamond', serif;
   --font-body: 'Atkinson Hyperlegible', sans-serif;
   --color-bg: #faf9f6;
@@ -53,11 +53,9 @@ html {
 }
 
 .header h2 {
-  line-height: 34px;
-  width: 50%;
+  line-height: 1.5rem;
   margin: 0 auto;
   padding-bottom: 5%;
-  font-weight: 500;
   font-family: var(--font-subheader);
 }
 
